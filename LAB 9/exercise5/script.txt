@@ -1,0 +1,3 @@
+db.getCollection('Restaurants').find(
+{"address.building": {$eq: "1008"}},
+{"restaurant_id":1, {$or:["address.street":"Street"],"name": {$eq:"Thai"}, "city":1}}).sort({"restaurant_is":1})

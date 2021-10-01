@@ -1,0 +1,2 @@
+db.Restaurants.find({}).sort(
+{"cuisine":1, "name":-1})

@@ -1,0 +1,4 @@
+db.getCollection('Restaurants').find(
+{$eq:"Delicatessen"}, {$and:[{"city":{$ne:"Brooklyn"}}],
+{"cuisine":1,"name":1}).sort({"name":1})
+
